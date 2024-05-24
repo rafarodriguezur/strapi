@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "health_facility_satisfaction_survey_comments",
+  "info": {
+    "singularName": "health-facility-satisfaction-survey-comment",
+    "pluralName": "health-facility-satisfaction-survey-comments",
+    "displayName": "Comentarios"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "block": {
+      "type": "boolean"
+    }
+  }
+}

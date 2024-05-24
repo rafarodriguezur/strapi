@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "health_facilities",
+  "info": {
+    "singularName": "health-facility",
+    "pluralName": "health-facilities",
+    "displayName": "Entidad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "health_facility_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "address": {
+      "type": "text",
+      "required": true,
+      "maxLength": 255
+    },
+    "latitude": {
+      "type": "float",
+      "required": true
+    },
+    "longitude": {
+      "type": "float",
+      "required": true
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "service_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service-category.service-category"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hour": {
+      "type": "component",
+      "repeatable": true,
+      "component": "operation.hour"
+    }
+  }
+}
