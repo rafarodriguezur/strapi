@@ -1035,7 +1035,7 @@ export interface ApiNotificationConfigurationNotificationConfiguration
     hour: Attribute.Integer &
       Attribute.SetMinMax<
         {
-          min: 12;
+          min: 1;
         },
         number
       > &

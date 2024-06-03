@@ -8,23 +8,21 @@ export interface OperationHour extends Schema.Component {
     description: '';
   };
   attributes: {
-    monday: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
-    tuesday: Attribute.Boolean &
-      Attribute.Required &
-      Attribute.DefaultTo<false>;
+    monday: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
+    tuesday: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
     wednesday: Attribute.Boolean &
       Attribute.Required &
-      Attribute.DefaultTo<false>;
+      Attribute.DefaultTo<true>;
     thursday: Attribute.Boolean &
       Attribute.Required &
-      Attribute.DefaultTo<false>;
-    friday: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
+      Attribute.DefaultTo<true>;
+    friday: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
     saturday: Attribute.Boolean &
       Attribute.Required &
-      Attribute.DefaultTo<false>;
-    sunday: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
-    from: Attribute.Time & Attribute.Required;
-    to: Attribute.Time & Attribute.Required;
+      Attribute.DefaultTo<true>;
+    sunday: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
+    from: Attribute.Time & Attribute.Required & Attribute.DefaultTo<'00:00'>;
+    to: Attribute.Time & Attribute.Required & Attribute.DefaultTo<'00:00'>;
   };
 }
 
