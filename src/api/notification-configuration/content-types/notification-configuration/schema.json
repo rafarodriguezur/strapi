@@ -13,7 +13,7 @@
   "attributes": {
     "hour": {
       "type": "integer",
-      "min": 12,
+      "min": 1,
       "default": 24
     }
   }

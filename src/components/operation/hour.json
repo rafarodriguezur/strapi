@@ -9,48 +9,50 @@
   "attributes": {
     "monday": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "tuesday": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "wednesday": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "thursday": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "friday": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "saturday": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "sunday": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "from": {
       "type": "time",
       "required": true,
-      "unique": false
+      "unique": false,
+      "default": "00:00"
     },
     "to": {
       "type": "time",
       "required": true,
-      "unique": false
+      "unique": false,
+      "default": "00:00"
     }
   }
 }
