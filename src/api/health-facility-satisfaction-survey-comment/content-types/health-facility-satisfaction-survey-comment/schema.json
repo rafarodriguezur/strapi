@@ -4,7 +4,8 @@
   "info": {
     "singularName": "health-facility-satisfaction-survey-comment",
     "pluralName": "health-facility-satisfaction-survey-comments",
-    "displayName": "Comentarios"
+    "displayName": "Comentarios",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +17,12 @@
       "maxLength": 255
     },
     "block": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
+    },
+    "block_user": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

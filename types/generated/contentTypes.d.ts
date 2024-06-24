@@ -956,6 +956,7 @@ export interface ApiHealthFacilitySatisfactionSurveyCommentHealthFacilitySatisfa
     singularName: 'health-facility-satisfaction-survey-comment';
     pluralName: 'health-facility-satisfaction-survey-comments';
     displayName: 'Comentarios';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -965,7 +966,8 @@ export interface ApiHealthFacilitySatisfactionSurveyCommentHealthFacilitySatisfa
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
-    block: Attribute.Boolean;
+    block: Attribute.Boolean & Attribute.DefaultTo<true>;
+    block_user: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1026,7 +1028,7 @@ export interface ApiNotificationConfigurationNotificationConfiguration
   info: {
     singularName: 'notification-configuration';
     pluralName: 'notification-configurations';
-    displayName: 'notification_configuration';
+    displayName: 'Configurar Notificaci\u00F3n';
   };
   options: {
     draftAndPublish: true;

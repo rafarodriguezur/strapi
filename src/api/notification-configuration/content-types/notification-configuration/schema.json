@@ -4,7 +4,7 @@
   "info": {
     "singularName": "notification-configuration",
     "pluralName": "notification-configurations",
-    "displayName": "notification_configuration"
+    "displayName": "Configurar Notificación"
   },
   "options": {
     "draftAndPublish": true
